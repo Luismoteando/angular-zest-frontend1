@@ -1,0 +1,35 @@
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+  <h1 style="font-weight:normal">Left Sidebar</h1>
+  <button (click)="visibleSidebar1 = false" class="ui-button-success" label="Save" pButton type="button"></button>
+  <button (click)="visibleSidebar1 = false" class="ui-button-secondary" label="Cancel" pButton type="button"></button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar2" [baseZIndex]="10000" position="right">
+  <h1 style="font-weight:normal">Right Sidebar</h1>
+  <button (click)="visibleSidebar2 = false" class="ui-button-success" label="Save" pButton type="button"></button>
+  <button (click)="visibleSidebar2 = false" class="ui-button-secondary" label="Cancel" pButton type="button"></button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar3" [baseZIndex]="10000" position="top">
+  <h1 style="font-weight:normal">Top Sidebar</h1>
+  <button (click)="visibleSidebar3 = false" class="ui-button-success" label="Save" pButton type="button"></button>
+  <button (click)="visibleSidebar3 = false" class="ui-button-secondary" label="Cancel" pButton type="button"></button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar4" [baseZIndex]="10000" position="bottom">
+  <h1 style="font-weight:normal">Bottom Sidebar</h1>
+  <button (click)="visibleSidebar4 = false" class="ui-button-success" label="Save" pButton type="button"></button>
+  <button (click)="visibleSidebar4 = false" class="ui-button-secondary" label="Cancel" pButton type="button"></button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar5" [baseZIndex]="10000" [fullScreen]="true">
+  <h1 style="font-weight:normal">Full Screen Sidebar</h1>
+  <button (click)="visibleSidebar5 = false" class="ui-button-success" label="Save" pButton type="button"></button>
+  <button (click)="visibleSidebar5 = false" class="ui-button-secondary" label="Cancel" pButton type="button"></button>
+</p-sidebar>
+
+<button (click)="visibleSidebar1 = true" icon="pi pi-arrow-right" pButton type="button"></button>
+<button (click)="visibleSidebar2 = true" icon="pi pi-arrow-left" pButton type="button"></button>
+<button (click)="visibleSidebar3 = true" icon="pi pi-arrow-down" pButton type="button"></button>
+<button (click)="visibleSidebar4 = true" icon="pi pi-arrow-up" pButton type="button"></button>
+<button (click)="visibleSidebar5 = true" icon="pi pi-th-large" pButton type="button"></button>

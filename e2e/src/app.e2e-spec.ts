@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display menu bar', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('angular-zest-frontend app is running!');
+    expect(page.isMenuBarPresent());
   });
 
   afterEach(async () => {
